@@ -155,81 +155,24 @@
 </ul> -->
 
 <mat-grid-list cols="4" rowHeight="500px">
-  <mat-grid-tile>
+  <mat-grid-tile *ngFor="let backpack of backpacks">
     <mat-card class="card">
       <mat-card-header>
-        <mat-card-title>Osprey Denali TE17</mat-card-title>
-        <mat-card-subtitle>Men's backpacking</mat-card-subtitle>
+        <mat-card-title>{{backpack.name}}</mat-card-title>
+        <mat-card-subtitle>{{backpack.label}}</mat-card-subtitle>
       </mat-card-header>
       <img
         mat-card-image
-        src="assets/img/TE_denali_black_red_17-200x200.jpg"
-        alt="Osprey Denali TE17"
+        src="{{backpack.img}}"
+        alt="{{backpack.name}}"
       />
       <mat-card-content>
-        <p class="product-price">Price: €190.00</p>
+        <p class="product-price">Price: €{{backpack.price}}</p>
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button color="primary">Add to Card</button>
       </mat-card-actions>
     </mat-card>
   </mat-grid-tile>
-  <mat-grid-tile
-    ><mat-card class="card">
-      <mat-card-header>
-        <mat-card-title>Osprey Denali TE17</mat-card-title>
-        <mat-card-subtitle>Men's backpacking</mat-card-subtitle>
-      </mat-card-header>
-      <img
-        mat-card-image
-        src="assets/img/TE_denali_black_red_17-200x200.jpg"
-        alt="Osprey Denali TE17"
-      />
-      <mat-card-content>
-        <p class="product-price">Price: €190.00</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="primary">Add to Card</button>
-      </mat-card-actions>
-    </mat-card></mat-grid-tile
-  >
-  <mat-grid-tile
-    ><mat-card class="card">
-      <mat-card-header>
-        <mat-card-title>Osprey Denali TE17</mat-card-title>
-        <mat-card-subtitle>Men's backpacking</mat-card-subtitle>
-      </mat-card-header>
-      <img
-        mat-card-image
-        src="assets/img/TE_denali_black_red_17-200x200.jpg"
-        alt="Osprey Denali TE17"
-      />
-      <mat-card-content>
-        <p class="product-price">Price: €190.00</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="primary">Add to Card</button>
-      </mat-card-actions>
-    </mat-card></mat-grid-tile
-  >
-  <mat-grid-tile
-    ><mat-card class="card">
-      <mat-card-header>
-        <mat-card-title>Osprey Denali TE17</mat-card-title>
-        <mat-card-subtitle>Men's backpacking</mat-card-subtitle>
-      </mat-card-header>
-      <img
-        mat-card-image
-        src="assets/img/TE_denali_black_red_17-200x200.jpg"
-        alt="Osprey Denali TE17"
-      />
-      <mat-card-content>
-        <p class="product-price">Price: €190.00</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="primary">Add to Card</button>
-      </mat-card-actions>
-    </mat-card></mat-grid-tile
-  >
 </mat-grid-list>
 
