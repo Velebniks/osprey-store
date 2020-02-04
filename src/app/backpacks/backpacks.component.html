@@ -11,12 +11,12 @@
       id="sc"
       src="https://img.icons8.com/cute-clipart/64/000000/shopping-cart.png"
     />
-    {{ getTotalCost() | currency }}
+    {{ data.getTotalCartCost() | currency }}
   </mat-toolbar-row>
 </mat-toolbar>
 
   <mat-grid-list cols="4" rowHeight="500px" class="grid">
-    <mat-grid-tile *ngFor="let backpack of backpacks">
+    <mat-grid-tile *ngFor="let backpack of data.backpacks">
       <mat-card class="card">
         <mat-card-header>
           <mat-card-title>{{ backpack.name }}</mat-card-title>
