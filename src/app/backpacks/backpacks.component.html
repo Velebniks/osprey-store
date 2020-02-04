@@ -31,8 +31,8 @@
           <p class="product-price">Price: €{{ backpack.price }}</p>
         </mat-card-content>
         <mat-card-actions>
-          <button *ngIf="backpack.inCart == false" (click)="backpack.inCart = true"  mat-raised-button color="primary">Add to cart</button>
-          <button *ngIf="backpack.inCart == true"  (click)="backpack.inCart = false" mat-raised-button color="warn">Remove</button>
+          <button *ngIf="backpack.inCart == false" (click)="data.toggleInCart(backpack)"  mat-raised-button color="primary">Add to cart</button>
+          <button *ngIf="backpack.inCart == true"  (click)="data.toggleInCart(backpack)" mat-raised-button color="warn">Remove</button>
         </mat-card-actions>
       </mat-card>
     </mat-grid-tile>

@@ -30,7 +30,7 @@
   <ng-container matColumnDef="actions">
     <th mat-header-cell *matHeaderCellDef>Actions</th>
     <td mat-cell *matCellDef="let backpack">
-      <button (click)="backpack.inCart = false" mat-raised-button color="warn">Remove</button>
+      <button (click)="data.toggleInCart(backpack)" mat-raised-button color="warn">Remove</button>
     </td>
     <td mat-footer-cell *matFooterCellDef></td>
   </ng-container>
